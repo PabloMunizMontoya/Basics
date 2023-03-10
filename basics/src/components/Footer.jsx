@@ -1,9 +1,9 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({date}) => {
     return ( 
         <footer>
-            <p>all rights reserved</p>
+            <p>all rights reserved  {date}</p>
         </footer>
      );
 }

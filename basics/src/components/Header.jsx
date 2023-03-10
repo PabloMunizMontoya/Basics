@@ -1,10 +1,10 @@
 import React from "react";
 
-function Header() {
+function Header({title}) {
 
 
     return(
-        <h1>Tienda Virtual</h1>
+        <h1>{title}</h1>
     )
 }
 
