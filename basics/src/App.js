@@ -27,6 +27,9 @@ function App() {
       },
     ])
 
+  //state for a shopping cart
+    const [ cart, setCart] = useState([])
+
   //Obtain the date
   const date = new Date().getFullYear()
 
@@ -41,6 +44,9 @@ function App() {
           <Product
             key={product.id}
             product = {product}
+            cart = {cart}
+            products = {products}
+            setCart = {setCart}
           />
         ))}
 
